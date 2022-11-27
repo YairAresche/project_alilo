@@ -1,0 +1,22 @@
+/* // Variables */
+/* // Variables */
+.cart {
+  cursor: pointer;
+  background-color: #C693A2;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 5rem;
+}
+.cart .cartImg {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  margin-right: 0.5rem;
+}
+.cart span {
+  color: white;
+  border: 2px solid white;
+  border-radius: 1rem;
+  font-size: 0.65rem;
+}/*# sourceMappingURL=CartWidget.css.map */

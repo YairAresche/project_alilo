@@ -1,0 +1,25 @@
+/* // Variables */
+$rosaViejo: #C693A2;
+$verdePastel: #8FB7AC;
+$celesteRetro: #c7d9fb;
+/* // Variables */
+.cart{
+    cursor: pointer;
+    background-color: $rosaViejo;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 5rem;
+    .cartImg{
+        width: 2rem;
+        height: 2rem;
+        color: white;
+        margin-right: .5rem;
+    }
+    span{
+        color: white;
+        border: 2px solid white;
+        border-radius: 1rem;
+        font-size: .65rem;
+    }
+}
