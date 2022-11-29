@@ -9,6 +9,8 @@ import Carousel from './components/Carousel/Carousel'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Welcome from './components/Welcome/Welcome'
+import AboutMe from './components/AboutMe/AboutMe'
 
 // Los componentes Contenedor son los que manejan lógica de estado
 function App() { // App es un componente Contenedor
@@ -19,15 +21,16 @@ function App() { // App es un componente Contenedor
 
   return (
     <div className="App">
-
+      
       <header>
         <NavBar />
-        
         {/* <ItemListContainer greeting={greeting} /> */}
       </header>
 
       <main>
         <Carousel />
+        <Welcome />
+        <AboutMe />
       </main>
       
     </div>

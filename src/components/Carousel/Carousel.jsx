@@ -7,7 +7,7 @@ import imgCarousel3 from '../../assets/carousel3.jpg'
 
 function CarouselFadeExample() {
     return (
-        <Carousel fade>
+        <Carousel className='carousel' fade>
             <Carousel.Item>
                 <img
                     className="imgCarousel d-block w-100"

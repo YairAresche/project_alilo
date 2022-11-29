@@ -1,5 +1,5 @@
 import './Brand.css'
-import logoAlilo from '../../assets/logo-alilo-200x200.png'
+// import logoAlilo from '../../assets/logo-alilo-200x200.png'
 
 const Brand = () => {
     return (

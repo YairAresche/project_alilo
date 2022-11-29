@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Champagne & Limousines", sans-serif;
+}
+
+/* header{
+} */
+
+main { /* Otra opcion para posicionar bien el carousel*/
+    position: absolute;
+    top: 6rem;
+}
