@@ -10,7 +10,7 @@ import CartWidget from '../CartWidget/CartWidget';
 function CollapsibleExample() {
     return (
         <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
-            <Container>
+            <Container fluid>
                 <Navbar.Brand href="#">
                     <Brand />
                 </Navbar.Brand>
