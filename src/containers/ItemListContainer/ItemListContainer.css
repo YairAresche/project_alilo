@@ -1,0 +1,9 @@
+.containerProducts {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: auto 1fr;
+  gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}/*# sourceMappingURL=ItemListContainer.css.map */

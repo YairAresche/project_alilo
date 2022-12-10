@@ -7,9 +7,9 @@ import CartWidget from '../CartWidget/CartWidget';
 
 import './NavBar.css'
 
-function CollapsibleExample() {
+function NavBarBootstrap() {
     return (
-        <Navbar fixed='top' collapseOnSelect expand="md" bg="white" variant="white">
+        <Navbar fixed='top' collapseOnSelect expand="md" variant="white">
             <Container fluid>
                 <Navbar.Brand href="#">
                     <Brand />
@@ -37,4 +37,4 @@ function CollapsibleExample() {
     );
 }
 
-export default CollapsibleExample;
+export default NavBarBootstrap;
