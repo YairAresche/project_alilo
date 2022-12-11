@@ -1,6 +1,6 @@
 // 1ro: Nativas
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-// 2do: Componentes nuestros
+// 2do: Mis Componentes
 import NavBar from './components/NavBar/NavBar'
 import Carousel from './components/Carousel/Carousel'
 import Welcome from './components/Welcome/Welcome'
@@ -21,21 +21,23 @@ function App() { // App es un componente Contenedor
   return (
     <BrowserRouter className="App">
 
-      <header>
-        <NavBar />
-      </header>
+      <NavBar />
 
       <Routes >
-      <Route path='/' element={ <Carousel /> } />
-        <Route path='/productos' element={ <ItemListContainer /> } />
-        <Route path='/detail' element={ <ItemDetailContainer /> } />
-        {/* <Route path='/cart' element={ <CartContainer /> } /> */}
-        {/* <Route path='/welcome' element={  } /> */}
-        <Route path='/aboutMe' element={ <AboutMe /> } />
-        <Route path='*' element={<Navigate to='/' />} />
-      </Routes>
 
-      <Welcome />
+        <Route path='/' element={<>
+          <Carousel />
+          <Welcome />
+          <ItemListContainer />
+          <AboutMe />
+        </>} />
+        <Route path='/categoria/:categoriaId' element={ <ItemListContainer /> } />
+        <Route path='/detail/:productoId' element={ <ItemDetailContainer /> } />
+        <Route path='/aboutMe' element={ <AboutMe /> } />
+        {/* <Route path='/cart' element={ <CartContainer /> } /> */}
+        <Route path='*' element={<Navigate to='/' />} />
+
+      </Routes>
 
     </BrowserRouter>
   )

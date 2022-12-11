@@ -11,4 +11,9 @@
 main { /* Otra opcion para posicionar bien el carousel*/
     position: absolute;
     top: 6rem;
+    
+}
+
+body{
+    background-color: #FAFBFF;
 }

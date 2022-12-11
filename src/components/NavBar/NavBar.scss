@@ -1,3 +1,11 @@
 .navbar{
     background-color: #f3eee3;
+    .dropdownContenedor{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    a{
+        text-decoration: none;
+    }
 }
