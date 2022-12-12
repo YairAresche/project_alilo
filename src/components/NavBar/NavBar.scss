@@ -1,11 +1,27 @@
-.navbar{
+nav.navbar{
     background-color: #f3eee3;
-    .dropdownContenedor{
-        display: flex;
-        flex-direction: column;
-        background-color: black;
+    div.container-fluid{
+        a{
+            text-decoration: none;
+        }
+        div#responsive-navbar-nav{
+            
+            div.navbar-nav{ // Home, Prod, AboutMe, FAQ, Form
+                div.dropdawnContenedor{
+                    div.dropdown-menu{
+                //         display: flex;
+                //         flex-direction: column;
+                //         a{
+                //             padding: 0 .5rem;
+                //         }
+                        a:hover{
+                            background-color: #C693A2;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
     }
-    a{
-        text-decoration: none;
-    }
+    
 }

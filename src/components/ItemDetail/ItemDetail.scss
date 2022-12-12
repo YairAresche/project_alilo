@@ -1,0 +1,18 @@
+.itemDetail{
+    margin-top: 5rem;
+    .productDetail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            padding: 3px;
+            border: 2px solid #f3eee3;
+            background-color: rgba(#C693A2, 0.5);
+        }
+    }
+    .agregarCarrito{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -13,25 +13,28 @@ function NavBarBootstrap() {
         // fixed='top'
         <Navbar  collapseOnSelect expand="md" variant="white"> 
             <Container fluid>
-                <Link className='' to='/' >
+                {/* <Link to='/' >
                     <Brand />
-                </Link>
+                </Link> */}
+                <Navbar.Brand as={Link} to='/' >
+                    <Brand />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <NavLink to="/">Inicio</NavLink>
+                        <Nav.Link as={Link} to="/">Inicio</Nav.Link>
                             <NavDropdown title="Productos" id="collasible-nav-dropdown" className='dropdawnContenedor'>
-                                <NavLink to="/categoria/tazones">
+                                <Nav.Link as={Link} to="/categoria/tazones">
                                     Tazones
-                                </NavLink>
-                                <NavLink to="/categoria/platos">
+                                </Nav.Link>
+                                <Nav.Link as={Link} to="/categoria/platos">
                                     Platos
-                                </NavLink>
-                                <NavLink to="/categoria/hornitos">
+                                </Nav.Link>
+                                <Nav.Link as={Link} to="/categoria/hornitos">
                                     Hornitos
-                                </NavLink>
+                                </Nav.Link>
                             </NavDropdown>
-                        <NavLink to="/aboutMe" >Sobre Mi</NavLink>
+                        <Nav.Link as={Link} to="/aboutMe" >Sobre Mi</Nav.Link>
                         {/* <Nav.Link href="#">Preguntas Frecuentes</Nav.Link>                         <Nav.Link href="#">Contacto</Nav.Link> */}
                     </Nav>
                     <Nav>

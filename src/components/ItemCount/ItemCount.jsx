@@ -1,51 +1,23 @@
 import { useState } from "react"
-
+import '../ItemCount/ItemCount.css'
 
 export const ItemCount = ( {stock = 5, initial=1, onAdd} ) => {
     const [contador, setearContador] = useState(initial)
-    const [booleano, setBooleano] = useState(true)
 
-    const sumar = () => {
-        if(contador < stock){
-            setearContador(contador + 1)
-        }
-    }
-
-    const restar = () => { if(contador > initial) setearContador(contador - 1) }
+    const increase = () => { if(contador < stock) setearContador(contador + 1) }
+    const decrease = () => { if(contador > initial) setearContador(contador - 1) }
 
     const handleOnadd = ()=> onAdd(contador);
 
     return (
-        <center className="mt-5 border border-1 border-primary p-3 rounded">
-            <button
-                className="btn btn-outline-primary"
-                onClick={sumar}
-            >
-                +
-            </button>
-            <label htmlFor="">{contador}</label>
-
-            <button
-                className="btn btn-outline-primary"
-                onClick={restar}
-            >
-                -
-            </button>
-            <br />
-            <button
-                className="btn btn-outline-primary"
-                onClick={ handleOnadd }
-            >
-                agregar al carrito
-            </button>
-            <br></br>
-            {/* <button 
-            className="btn btn-outline-primary" 
-            onClick={hanldeBool} 
-        > 
-            Ejecutar Booleano
-        </button>      */}
-        </center>
+        <div className="itemCount">
+            <div className="mb-3">
+                <button className="btn btn-outline-primary" onClick={increase}>+</button>
+                <label className="ms-1 me-1" htmlFor="">{contador}</label>
+                <button className="btn btn-outline-primary" onClick={decrease}>-</button>
+            </div>
+            <button className="btn btn-outline-primary" onClick={ handleOnadd }>agregar al carrito</button>
+        </div>
     )
 }
 export default ItemCount;

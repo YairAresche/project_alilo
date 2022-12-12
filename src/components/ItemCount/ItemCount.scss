@@ -1,0 +1,9 @@
+.itemCount{
+    // d-flex flex-column border border-2 p-3
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid blue;
+    padding: 2rem 5rem;
+    border-radius: .25rem;
+}

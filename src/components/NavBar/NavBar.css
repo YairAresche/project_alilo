@@ -1,11 +1,10 @@
-.navbar {
+nav.navbar {
   background-color: #f3eee3;
 }
-.navbar .dropdownContenedor {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-}
-.navbar a {
+nav.navbar div.container-fluid a {
   text-decoration: none;
+}
+nav.navbar div.container-fluid div#responsive-navbar-nav div.navbar-nav div.dropdawnContenedor div.dropdown-menu a:hover {
+  background-color: #C693A2;
+  color: white;
 }/*# sourceMappingURL=NavBar.css.map */

@@ -9,12 +9,12 @@ function CardProduct({id, name, categoria, precio, img}) {
         <Card key={id} className='cardProducts'>
             <Card.Img variant="top" src={img} />
             <Card.Body>
-                <Card.Title>{categoria}</Card.Title>
-                <Card.Text>
+                <Card.Text>{categoria.toUpperCase()}</Card.Text>
+                <Card.Title >
                     {name}
-                </Card.Text>
+                </Card.Title>
                 <Card.Text>
-                    {precio}
+                    Precio: ${precio}
                 </Card.Text>
                 <Link to={`/detail/${id}`}> <Button>Detalle del producto </Button> </Link>
             </Card.Body>

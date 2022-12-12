@@ -1,0 +1,8 @@
+.itemCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid blue;
+  padding: 2rem 5rem;
+  border-radius: 0.25rem;
+}/*# sourceMappingURL=ItemCount.css.map */
