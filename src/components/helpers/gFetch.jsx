@@ -18,6 +18,6 @@ export const gFetch = (id) => {
         // acciones
         setTimeout(() => {
             resolve(id ? productos.find(prod => prod.id === id) : productos);
-        }, 500)
+        }, 1000)
     })
 }

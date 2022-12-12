@@ -1,9 +1,9 @@
-import './products.css';
+import './product.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
-function CardProducts({id, name, categoria, stock, precio, img}) {
+function CardProduct({id, name, categoria, precio, img}) {
     // console.log(props)
     return (
         <Card key={id} className='cardProducts'>
@@ -22,4 +22,4 @@ function CardProducts({id, name, categoria, stock, precio, img}) {
     );
 }
 
-export default CardProducts;
+export default CardProduct;

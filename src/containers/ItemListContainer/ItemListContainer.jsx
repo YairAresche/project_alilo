@@ -1,5 +1,5 @@
 import { gFetch } from '../../components/helpers/gFetch';
-import CardProducts from '../../components/Products(items)/Products'
+import CardProducts from '../../components/Product/Product'
 import { useState, useEffect } from 'react';
 import './ItemListContainer.css'
 import { Container, Spinner } from 'react-bootstrap';
@@ -35,7 +35,7 @@ const ItemListContainer = () => {
                 <div className='containerProducts'>
                     { loading ? <Spinner /> :
                     products.map( product => 
-                    <CardProducts key={product.id} item={product} id={product.id} categoria={product.categoria} name={product.name} precio={product.precio} img={product.img}  /> )}
+                    <CardProducts key={product.id} item={product} id={product.id} categoria={product.categoria} name={product.name} precio={product.precio} img={product.img}  />) }
                 </div>
             
         </Container>
